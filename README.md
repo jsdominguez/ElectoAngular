@@ -1,5 +1,5 @@
 # ElectoAngular
-Desarrollada en Php + Jquery + Angular + BootStrap
+Desarrollada en `Php` + `Jquery` + `Angular` + `BootStrap`
 
 # Demo
 ![screenshot_1](https://cloud.githubusercontent.com/assets/13858402/14966495/57c96824-1078-11e6-94b6-b1c388b91646.png)
