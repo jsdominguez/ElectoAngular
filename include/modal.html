@@ -1,0 +1,45 @@
+<!-- Modal Que se despliega segun el codigo -->
+
+<div class="modal animated fadeInDown" id="{{datos.codigo}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="http://cde.3.elcomercio.pe/img/0/1/2/6/0/1260975.jpg" id="banner" class="modal-title img-responsive" />
+      </div>
+      <div class="modal-body">
+        <form name="myForm" ng-submit="votar(datos)">
+          <div class="form-group">
+            <img ng-src="img/{{datos.foto}}.jpg" id="modalfoto" class="img-circle" width="150px" height="150px">
+            <br>
+            <label ng-model="datos.candidato" id="modalnombre">{{datos.candidato}}</label>
+            <div class="input-group" ng-class="validar">
+              <span class="input-group-addon" id="sizing-addon2"><img src="http://www.nuevodnionline.com.ar/images/logo.png" width="20px" height="20px"></span>
+              <input type="text" aria-describedby="sizing-addon2" class="form-control" placeholder="Ingrese su DNI" ng-model="datos.dni" name="mycampo" required minlength="8" maxlength="8">
+            </div>
+            <div ng-messages="myForm.mycampo.$error" role="alert">
+              <div ng-message="maxlength">
+                <p class="text-danger text-center animated fadeOut">Ingrese DNI Correctamente</p>
+              </div>
+              <div ng-message="minlength">
+                <p class="text-danger text-center">Ingrese DNI Correctamente</p>
+              </div>
+                <p class="text-danger text-center">{{datosincorrectos}}</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary form-control" id="btnvotar">VOTAR</button>
+          </div>
+          <div class="form-group">
+            <button type="button" id="cancelar" class="btn btn-primary form-control" data-dismiss="modal">CANCELAR</button>
+          </div>
+          <div class="form-group">
+            <div class="alert alert-danger" role="alert">
+              <p class="text-center">ATENCION : Solo puede emitir su voto una sola vez.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
