@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="eleccion">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="http://appendto.com/wp-content/uploads/2014/07/icon-logo-angular.png" />
+  <script type="text/javascript" src="Js/angular.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="Css/bootstrap.css">
+  <link rel="stylesheet" href="Css/voto.css"> <!-- Mis estilos -->
+  <link rel="stylesheet" href="Css/animate.css"> <!-- Efecto para el modal que baja -->
+  <link rel="stylesheet" href="Css/sweetalert2.css"> <!-- Estilo para la despedida -->
+  <title>ElectoAngular</title>
+
+</head>
+
+<body ng-controller="main">
+  <div class="container ">
+    <nav class="navbar navbar-fixed-top">
+      <img src="http://cde.3.elcomercio.pe/img/0/1/2/6/0/1260975.jpg" id="banner" class="img-responsive" />
+    </nav>
+
+    <div id="contenedor">
+      <div class="row">
+        <div class=" col-md-4" ng-repeat="datos in res">
+          <!-- ***************************** -->
+          <h3 class="text-center">{{datos.candidato}}</h3>
+          <img ng-src="img/{{datos.foto}}.jpg" class="img-circle" width="100px" height="100px">
+          <label style="margin-left:30px">{{datos.partido}}</label>
+          <div id="voto">
+            <h4><span class="label label-warning">{{datos.votos}}</span></h4>
+          </div>
+          <button type="button" data-toggle="modal" data-target="#{{datos.codigo}}" style="margin-top:5px">Votar</button>
+          <div ng-include="'include/modal.html'"></div>
+          <!-- ***************************** -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+<script type="text/javascript" src="Js/control.js"></script> <!-- Configuacion del proyecto -->
+<script type="text/javascript" src="Js/jquery.js"></script>   <!-- Modal -->
+<script type="text/javascript" src="Js/bootstrap.js"></script>    <!-- Modal -->
+<script type="text/javascript" src="Js/messages.js"></script>   <!-- Validaciones -->
+<script type="text/javascript" src="Js/sweetalert2.min.js"></script>  <!-- Mensage despedida -->
+
+</html>
