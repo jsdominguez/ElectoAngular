@@ -1,0 +1,75 @@
+#voto
+{
+  margin-top: -40px !important;
+  margin-left: 50%;
+  margin-bottom: 10px;
+}
+#contenedor
+{
+  margin-top: 93px;
+}
+#banner
+{
+  width: 100% !important;
+  height: 90px;
+  }
+
+  label
+  {
+    font-family: 'Francois One';
+    font-size: 20px;
+
+  }
+  button
+  {
+    width: 100%;
+  }
+  h3
+  {
+    background-color: #D0202B;
+    font-weight: bold;
+    color: white;
+  }
+
+  button
+  {
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: white;
+  }
+
+#modalfoto
+{
+  margin-left: 35%;
+  margin-top: -10px !important;
+}
+
+#modalnombre
+{
+  margin-top: 5px;
+  margin-left: 33%;
+  margin-bottom: 10px;
+}
+
+#cancelar
+{
+  background-color: #D0202B;
+  border: 1px red solid;
+  font-weight: bold;
+}
+
+#btnvotar
+{
+  font-weight: bold;
+}
+
+.validarnumero
+{
+  border: red 1px solid;
+}
+
+.confirm
+{
+  margin-top: -50px !important;
+  padding-top: -50px !important;
+}
