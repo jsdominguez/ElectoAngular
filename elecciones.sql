@@ -26,6 +26,10 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `candidatos`
 --
 
+create database elecciones;
+
+use elecciones;
+
 CREATE TABLE IF NOT EXISTS `candidatos` (
   `codigo` char(5) NOT NULL,
   `candidato` varchar(50) NOT NULL,
