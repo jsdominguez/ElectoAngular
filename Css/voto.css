@@ -6,7 +6,7 @@
 }
 #contenedor
 {
-  margin-top: 93px;
+  margin-top: 87px;
 }
 #banner
 {
@@ -72,4 +72,31 @@
 {
   margin-top: -50px !important;
   padding-top: -50px !important;
+}
+
+footer
+{
+	background:black;
+	color:white;
+	  width:100%; 
+  position:absolute; 
+  bottom:0; 
+  left:0; 
+}
+
+a
+{
+	color:#D0202B;
+	font-family: 'Indie Flower', cursive;
+	font-size:15px;
+}
+
+a:hover
+{
+	color:#D0202B;
+}
+
+a:visited
+{
+	color:#D0202B;
 }
