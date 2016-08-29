@@ -28,6 +28,7 @@ control.controller("main", function($scope, $http)
       }
       else // Si la respuesta no trae ni un mensage entoncs DNI es corrcto
       {
+		 $(".modal").hide();
         $http.get("PHP/votos.php").success(function(data)
         {
           $scope.res = data; // cargamos los nuevos votos que se han Emitido
